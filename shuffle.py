@@ -3,7 +3,7 @@ from random import shuffle
 #initial list order
 mylist = [" ","O"," "]
 
-#Shuffle list
+#Shuffle list fn
 def shuffle_list(list_mod):
     shuffle(list_mod)
     return list_mod
