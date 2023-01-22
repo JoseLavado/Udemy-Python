@@ -12,3 +12,4 @@ def sum69(thelist):
 
 print(sum69(my_list))
 
+
