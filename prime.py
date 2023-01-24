@@ -18,3 +18,16 @@ elif num > 1:
 # or equal to 1, it is not prime
 else:
    print(num,"is nota prime number")
+
+
+print("*******************************************************************")
+for n in range(2, 10):
+    print("n is = " + str(n)) 
+    for x in range(2, n):
+        print("n is = " + str(n) + " x is = " + str(x)) 
+        if n % x == 0:
+            print( n, 'equals', x, '*', n/x)
+            break
+    else:
+        # loop fell through without finding a factor
+        print(n, 'is a prime number')
