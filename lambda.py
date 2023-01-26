@@ -65,6 +65,11 @@ print(list12)
 #print(evenchk(81))
 print(list(filter(evenchk, list12)))
 
+def dos(nums):
+    return nums**2
+
+dosb=lambda nums: nums**2
+print(list(map(lambda num:num+1,list12)))
 
 
 
