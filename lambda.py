@@ -48,16 +48,26 @@ print(list(filter(lambda i:i%2==0,a_list)))
 
 print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 
-list12 = [1,2,3,4]
+list12 = [11,22,33,44]
 def dobla(arr):
     return arr*arr
-print(dobla(9))
+#print(dobla(9))
+print("dobla")
+print(list12)
 print(list(map(dobla, list12)))
+list13=list(map(dobla, list12))
+print(list13)
 
 def evenchk(arr):
     return arr%2==0
+print("evenchk")
+print(list12)
+#print(evenchk(81))
+print(list(filter(evenchk, list12)))
 
-print(evenchk(81))
+
+
+
 
 
 
