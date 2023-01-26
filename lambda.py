@@ -46,6 +46,19 @@ print(a_list)
 print(list(map(lambda i:i**2,a_list)))
 print(list(filter(lambda i:i%2==0,a_list)))
 
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+
+list12 = [1,2,3,4]
+def dobla(arr):
+    return arr*arr
+print(dobla(9))
+print(list(map(dobla, list12)))
+
+def evenchk(arr):
+    return arr%2==0
+
+print(evenchk(81))
+
 
 
 
