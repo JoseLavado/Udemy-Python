@@ -14,23 +14,23 @@ result = num_chk(2,1,3)
 print(f'the number 2 is between 1 and 3 is {result}')
 
 ####################################################
-def up_low(s):
-    up=0
-    low=0
-    for i in s:
-        if i.isupper() == True:
-            up=up+1
-        elif i.islower() == True:
-            low=low+1
+def up_low(word):
+    d = {"upper":0, "lower":0} # a dictionary to hold the values
+    for char in word:
+        if char.isupper():
+            d["upper"]+=1
+        elif char.islower():
+            d["lower"]+=1
         else:
             pass
-    print(f'upper letters are = {up}')
-    print(f'lower letters are {low}')
+    print(f'orginal sentence is {word}')
+    print(f'number of upper letters is: {d["upper"]}')
+    print(f'number of lower letter is: {d["lower"]}')
 
-up_low("AB A AA bb bbbb")
-
-
-
+up_low("Hello Mr. Rogers, how are you this fine Tuesday?")
 
 
 
+
+
+    
