@@ -1,11 +1,11 @@
-###################################################
+print("####################################################")
 def sphere_vol(radius):
     return (4/3)*3.14159*(radius**3)
 
 result = sphere_vol(2)
 print(f'The volume of the sphere with radius 2 is {result}')
 
-#################################################
+print("####################################################")
 def num_chk(num,low,high):
     if num>low and num <high:
         return True
@@ -13,7 +13,7 @@ def num_chk(num,low,high):
 result = num_chk(2,1,3)
 print(f'the number 2 is between 1 and 3 is {result}')
 
-####################################################
+print("####################################################")
 def up_low(word):
     d = {"upper":0, "lower":0} # a dictionary to hold the values
     for char in word:
@@ -29,8 +29,19 @@ def up_low(word):
 
 up_low("Hello Mr. Rogers, how are you this fine Tuesday?")
 
+print("####################################################")
+my_list = [1,1,1,1,1,3,3,4,4,4,4,4,5,5,5,5,5]
+#print(list(set(my_list)))
+uniq = []
+for item in my_list:
+    if not(item in uniq):
+        uniq.append(item)
+    else:
+        pass
+print(f'the original is {my_list}')
+print(f'the uniq list is {uniq}')
 
-
+print("####################################################")
 
 
     
