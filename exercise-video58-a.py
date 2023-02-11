@@ -51,9 +51,16 @@ def mult(my_list):
 
 answer= mult(my_list)    
 print(f'answer is {answer}')
+print("####################################################")
+word="madam"
+wordb=list(word)
+wordc=list(word)
+wordc.reverse()
+print("####################################################")
+print(wordb)
+print(wordc)
+if wordb == wordc:
+    print('it is a palindrome')
+else:
+    print('it is NOT a palindrome')
 
-
-
-
-
-    
