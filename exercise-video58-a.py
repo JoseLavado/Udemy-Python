@@ -42,6 +42,18 @@ print(f'the original is {my_list}')
 print(f'the uniq list is {uniq}')
 
 print("####################################################")
+my_list=[1,2,3,-4]
+def mult(my_list):
+    result=1
+    for i in my_list:
+        result=result*i
+    return result
+
+answer= mult(my_list)    
+print(f'answer is {answer}')
+
+
+
 
 
     
